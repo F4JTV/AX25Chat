@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.ax25chat.AX25Chat</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <name>AX25Chat</name>
+  <summary>Packet radio chat and APRS over AX.25 with a built-in modem</summary>
+  <description>
+    <p>
+      AX25Chat exchanges text over amateur packet radio in AX.25 UI frames,
+      sends and receives APRS messages with acknowledgements and retries,
+      decodes APRS positions, objects, status and weather reports, reports
+      its own position from fixed coordinates or a GPS receiver, and can
+      beacon periodically.
+    </p>
+    <p>
+      The modem is Dire Wolf, compiled into the program: a sound card and a
+      PTT line are all the hardware needed. Transmissions wait for a clear
+      frequency, using the modem's own carrier detect.
+    </p>
+  </description>
+  <developer id="io.github.ax25chat">
+    <name>AX25Chat Community</name>
+  </developer>
+  <!-- Replace with the project's own page once it is published; the
+       upstream modem's page stands in until then. -->
+  <url type="homepage">https://github.com/wb2osz/direwolf</url>
+  <launchable type="desktop-id">ax25chat.desktop</launchable>
+  <provides>
+    <binary>ax25chat</binary>
+  </provides>
+  <categories>
+    <category>Network</category>
+    <category>HamRadio</category>
+  </categories>
+  <keywords>
+    <keyword>packet</keyword>
+    <keyword>AX.25</keyword>
+    <keyword>APRS</keyword>
+    <keyword>amateur radio</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="@PROJECT_VERSION@" date="@AX25CHAT_RELEASE_DATE@"/>
+  </releases>
+</component>

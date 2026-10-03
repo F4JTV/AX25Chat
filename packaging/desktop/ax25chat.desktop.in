@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=AX25Chat
+GenericName=Packet radio chat
+GenericName[fr]=Messagerie packet radio
+Comment=Chat and APRS over AX.25 with a built-in Dire Wolf modem
+Comment[fr]=Messagerie et APRS sur AX.25 avec un modem Dire Wolf intégré
+Exec=@BINDIR@/ax25chat
+Icon=ax25chat
+Terminal=false
+Categories=Network;HamRadio;Qt;
+Keywords=packet;radio;AX.25;APRS;amateur;ham;modem;
+StartupNotify=true

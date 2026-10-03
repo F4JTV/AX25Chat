@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Behind the adaptive launcher icon and the splash screen. -->
+    <color name="ax25chat_icon_background">#1c2331</color>
+    <color name="ax25chat_splash_background">#1c2331</color>
+</resources>

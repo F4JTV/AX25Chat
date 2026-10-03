@@ -1,0 +1,69 @@
+.TH AX25CHAT 1 "September 2026" "AX25Chat" "User Commands"
+.SH NAME
+ax25chat \- packet radio chat and APRS over AX.25 with a built-in Dire Wolf modem
+.SH SYNOPSIS
+.B ax25chat
+[\fB\-\-config\fR \fIPATH\fR]
+[\fB\-\-call\fR \fICALL\fR]
+[\fB\-\-modem\-conf\fR \fIPATH\fR]
+[\fB\-\-no\-modem\fR]
+[\fB\-\-style\fR \fINAME\fR]
+[\fB\-\-list\-styles\fR]
+.SH DESCRIPTION
+.B ax25chat
+is a chat application for amateur packet radio. It exchanges text in AX.25
+UI frames on an unproto destination, sends and receives APRS messages with
+acknowledgements and retries, decodes APRS positions, objects, items, status
+and weather reports, reports its own position from fixed coordinates or a
+GPS receiver, and can beacon periodically. The modem is Dire Wolf, compiled
+into the program: a sound card and a PTT line are all the hardware needed.
+.PP
+The modem is configured through a Dire Wolf configuration file
+(\fIdirewolf.conf\fR) selected in the Configuration tab; a starter file is
+written to \fI~/.config/AX25Chat/\fR on the first run. The application
+settings are kept in \fI~/.config/AX25Chat/config.json\fR.
+.SH OPTIONS
+.TP
+.BI \-\-config " PATH"
+Use this settings file instead of the default.
+.TP
+.BI \-\-call " CALL"
+Override the callsign for this run, e.g. MYCALL\-7.
+.TP
+.BI \-\-modem\-conf " PATH"
+Use this Dire Wolf configuration file for the built-in modem.
+.TP
+.B \-\-no\-modem
+Do not start the modem at launch, even if configured to.
+.TP
+.BI \-\-style " NAME"
+Force a Qt style for this run, for example Fusion.
+.TP
+.B \-\-list\-styles
+Print the Qt styles available on this machine and exit.
+.TP
+.BR \-h ", " \-\-help
+Show the command line help and exit.
+.TP
+.BR \-v ", " \-\-version
+Show the version and exit.
+.SH ENVIRONMENT
+.TP
+.B AX25CHAT_STYLE
+A Qt style to use, overridden by \fB\-\-style\fR and overriding the saved
+setting.
+.SH FILES
+.TP
+.I ~/.config/AX25Chat/config.json
+Application settings.
+.TP
+.I ~/.config/AX25Chat/direwolf.conf
+Default modem configuration file.
+.TP
+.I /usr/share/ax25chat/data/
+Device identification (tocalls.yaml) and symbol tables used by the decoders.
+.SH SEE ALSO
+.BR direwolf (1)
+.SH LICENSE
+GNU General Public License, version 2 or later. The program compiles a
+modified copy of Dire Wolf by John Langner, WB2OSZ.

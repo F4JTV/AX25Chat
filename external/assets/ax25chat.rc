@@ -1,0 +1,2 @@
+// Windows executable icon. The .ico carries every size Windows asks for.
+IDI_ICON1 ICON "ax25chat.ico"
